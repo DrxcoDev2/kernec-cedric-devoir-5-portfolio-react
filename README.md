@@ -1,16 +1,68 @@
-# React + Vite
+# 🌐 Portfolio React – Devoir 5 CEF
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projet réalisé dans le cadre du **Devoir 5 – Développeur Web & Web Mobile (CEF)**.  
+Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **Bootstrap** et **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Objectifs du projet
 
-## React Compiler
+- Créer une application React fonctionnelle et responsive (mobile / tablette / desktop),
+- Utiliser **React Router** pour la navigation entre les pages :
+  - Accueil (Home)
+  - Services
+  - Portfolio
+  - Contact
+  - Mentions légales
+- Intégrer une **modale** affichant les informations GitHub via l’API publique,
+- Respecter les standards **W3C** et les bonnes pratiques **SEO**,
+- Fournir un dépôt GitHub propre et documenté.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies utilisées
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technologie | Utilisation |
+|-------------|-------------|
+| ⚛️ React.js | Framework principal |
+| ⚡ Vite | Environnement de développement |
+| 🎨 Bootstrap 5 | Mise en forme et responsive design |
+| 🧭 React Router DOM | Gestion des routes |
+| 🧩 Git & GitHub | Versioning et collaboration |
+
+---
+
+## 📦 Installation du projet
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/cedrickernec/kernec-cedric-devoir-5-portfolio-react.git
+
+# Accéder au dossier
+cd kernec-cedric-devoir-5-portfolio-react
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
+```
+
+---
+
+## 🧑‍💻 Auteur
+
+Cédric Kernec
+📧 cedrickernec.ck@gmail.com
+💼 Mon profil GitHub
+
+---
+
+## ✅ Validation finale
+
+Le projet fera l’objet :
+- de commits explicites (Closes #1, etc.),
+- de captures de validation W3C,
+- et d’un README complet avec badges, démo et remerciements.
+
+🧱 README provisoire : Il sera enrichi au fur et à mesure du développement (installation Bootstrap, React Router, modale GitHub, etc.)
