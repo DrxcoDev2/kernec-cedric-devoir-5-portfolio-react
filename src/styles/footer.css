@@ -1,0 +1,241 @@
+:root {
+    /* === Global Variables ===
+       Defines reusable colors for hover effects and borders (gold tone). */
+    --color-hover: #ffd700;
+    --color-border: #ffd700;
+}
+
+/* ================================
+   FOOTER BASE
+   -------------------------------
+   Main footer container:
+   - Full width, centered layout
+   - Vertical stacking with spacing
+   - Transparent background and white text
+   ================================ */
+.footer {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 48px 24px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  box-sizing: border-box;
+  letter-spacing: 0.02em;
+  /* Optional glass effect: */
+  /* backdrop-filter: blur(2px) saturate(120%); */
+}
+
+/* ================================
+   TITLE
+   -------------------------------
+   Styles the main footer heading:
+   - Large, bold font
+   - Soft shadow for contrast
+   - Left-aligned on desktop
+   ================================ */
+.footer-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.15);
+  text-align: left;
+  width: 100%;
+}
+
+/* ================================
+   SOCIAL ICONS
+   -------------------------------
+   Layout for social media icons:
+   - Displayed in a row
+   - White by default, gold on hover
+   ================================ */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.6em;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: var(--color-hover);
+}
+
+/* ================================
+   CONTENT GRID
+   -------------------------------
+   Main grid layout for footer sections:
+   - 3 equal columns on desktop
+   - Responsive structure handled later
+   ================================ */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: left;
+  transition: gap 0.3s;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ================================
+   SECTION HEADINGS
+   -------------------------------
+   Styles for section titles inside the grid:
+   - Uppercase, bold, slightly spaced
+   ================================ */
+.section-head {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fff;
+  opacity: 0.97;
+}
+
+/* ================================
+   TEXT & LINKS
+   -------------------------------
+   General styling for text and links:
+   - Consistent font size and spacing
+   - Dotted underline for links (solid gold on hover)
+   ================================ */
+.content p,
+.content li,
+.content a {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.92;
+  line-height: 1.6;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.content a {
+  font-weight: 500;
+  border-bottom: 1px dotted rgba(255,255,255,0.25);
+}
+
+.content a:hover {
+  opacity: 1;
+  color: var(--color-hover);
+  border-bottom: 1px solid var(--color-hover);
+}
+
+/* ================================
+   BADGES
+   -------------------------------
+   Tag-like elements for categories or labels:
+   - Rounded borders
+   - Subtle background
+   - Invert colors on hover
+   ================================ */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.badges span {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.93rem;
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.badges span:hover {
+  background: #fff;
+  color: #333;
+  border-color: var(--color-border);
+}
+
+/* ================================
+   COPYRIGHT
+   -------------------------------
+   Footer copyright area:
+   - Small italic text
+   - Slight transparency
+   - Left-aligned for readability
+   ================================ */
+.footer-copy {
+  font-size: 0.96rem;
+  opacity: 0.75;
+  margin: 0;
+  letter-spacing: 0.03em;
+  font-style: italic;
+  text-align: left;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   -------------------------------
+   Adjusts layout and text sizes
+   for different screen widths.
+   ================================ */
+
+/* ---- Mobile: single-column layout ---- */
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px 8px 16px 8px;
+    gap: 20px;
+  }
+
+  .footer-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .section-head {
+    font-size: 1rem;
+  }
+}
+
+/* ---- Tablet: two-column layout ---- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---- Large Screens: default desktop ---- */
+@media (min-width: 1025px) {
+  .footer-title {
+    font-size: 2.25rem;
+  }
+}
